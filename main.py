@@ -1,8 +1,10 @@
 import argparse
 import logging
-from gui import EbayListingGUI
-from data import EbayListingData
+from EbayListingGUI import EbayListingGUI
+from EbayListingData import EbayListingData
 from html_generator import EbayHTMLGenerator
+from html_generator import EbayHTMLGenerator
+html_generator = EbayHTMLGenerator()
 
 def configure_logging(log_level):
     logging.basicConfig(level=log_level)
