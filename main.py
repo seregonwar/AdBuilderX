@@ -17,9 +17,8 @@ def main():
 
     configure_logging(args.log_level)
 
-    gui = EbayListingGUI()
     data = EbayListingData()
-    html_generator = EbayHTMLGenerator()
+    gui = EbayListingGUI(data, html_generator)  # Passa data_handler e html_generator come argomenti
 
     try:
         gui.run()
